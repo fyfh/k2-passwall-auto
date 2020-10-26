@@ -549,6 +549,7 @@ TARGET_DEVICES += oy-0001
 
 define Device/psg1208
   DTS := PSG1208
+  IMAGE_SIZE := $(ralink_default_fw_size_16M)
   DEVICE_TITLE := Phicomm PSG1208
   DEVICE_PACKAGES := kmod-mt76x2
 endef
@@ -556,6 +557,7 @@ TARGET_DEVICES += psg1208
 
 define Device/psg1218a
   DTS := PSG1218A
+  IMAGE_SIZE := $(ralink_default_fw_size_16M)
   DEVICE_TITLE := Phicomm PSG1218 rev.Ax
   DEVICE_PACKAGES := kmod-mt76x2
   SUPPORTED_DEVICES += psg1218
@@ -564,6 +566,7 @@ TARGET_DEVICES += psg1218a
 
 define Device/psg1218b
   DTS := PSG1218B
+  IMAGE_SIZE := $(ralink_default_fw_size_16M)
   DEVICE_TITLE := Phicomm PSG1218 rev.Bx
   DEVICE_PACKAGES := kmod-mt76x2
   SUPPORTED_DEVICES += psg1218
